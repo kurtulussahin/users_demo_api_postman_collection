@@ -1,0 +1,153 @@
+{
+	"info": {
+		"_postman_id": "42efdb21-ed24-4046-8dd8-c3849b2ad600",
+		"name": "Users Demo API",
+		"description": "https://usersdemo.herokuapp.com",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "List users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://usersdemo.herokuapp.com/api/users?page=1",
+					"protocol": "https",
+					"host": [
+						"usersdemo",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"users"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Single user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://usersdemo.herokuapp.com/api/users/2",
+					"protocol": "https",
+					"host": [
+						"usersdemo",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"users",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"morpheus\",\n    \"job\": \"leader\"\n}"
+				},
+				"url": {
+					"raw": "https://usersdemo.herokuapp.com/api/users",
+					"protocol": "https",
+					"host": [
+						"usersdemo",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update user",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"morpheus\",\n    \"job\": \"leader\"\n}"
+				},
+				"url": {
+					"raw": "https://usersdemo.herokuapp.com/api/users/2",
+					"protocol": "https",
+					"host": [
+						"usersdemo",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"users",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete user",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://usersdemo.herokuapp.com/api/users/2",
+					"protocol": "https",
+					"host": [
+						"usersdemo",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"users",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
